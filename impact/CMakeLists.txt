@@ -59,8 +59,4 @@ target_link_libraries(${TARGET} PUBLIC z)
 # specify where the public headers of this library are
 target_include_directories(${TARGET} PUBLIC $<BUILD_INTERFACE:${PUBLIC_HDR_DIR}> $<INSTALL_INTERFACE:include>)
 
-install(TARGETS ${TARGET} 
-        LIBRARY DESTINATION lib
-        PUBLIC_HEADER DESTINATION include
-        RUNTIME DESTINATION bin)
 
